@@ -1,38 +1,46 @@
 </> Markdown
-# SauceDemo – Cypress Test Automation
-## Description:
+# SauceDemo Cypress Test Automation Project
+## Description
 End-to-end test automation framework for [SauceDemo](https://www.saucedemo.com/), built with **Cypress** and **JavaScript**, using the Page Object Model (POM) pattern.
 
-This project was built as a practice/portfolio project to prepare for a Junior QA Automation Engineer role. A companion project testing the same site with **Java + Selenium** 
-is available here:  [Java/Selenium version of this project](https://github.com/AleksandraPrlincevic/saucedemo-selenium-automation-project).
+This project was built as a portfolio project to practice UI test automation. A companion project testing the same site with **Java + Selenium** 
+is available here:  [Java/Selenium version of this project](https://github.com/AleksandraPrlincevic/saucedemo-selenium-java-ui-tests).
+
 ## Tech Stack
 
-     - Node.js v24.18.0
-     - Cypress 15.18.0 – end-to-end testing framework
-     - JavaScript
-     - Page Object Model (POM) design pattern
-     - Run on Windows 11
+- Node.js v24.22.2
+- Cypress 15.18.0 – end-to-end testing framework
+- JavaScript
+- Page Object Model (POM) design pattern
+- Run on Windows 11
+
 ## Project Structure
 
 ```
 
-
 cypress/
 ├───e2e/                # Test spec files
-├───fixtures/           # Page Objects and component classes
-├───pages/              # Test data (JSONs)
+├───fixtures/           # Test data (JSONs)
+├───pages/              # Page Objects and component classes
 └───support/            # Custom commands and global config
 
 ```
+## How to run
+
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) installed
+- Node.js 20.1 or newer, except odd-numbered versions (tested with v24.22.2)
 
 ### Installation
 
+Clone the repository and install dependencies:
+
 ```bash
+git clone https://github.com/AleksandraPrlincevic/saucedemo-cypress-js-ui-tests.git
+cd saucedemo-cypress-js-ui-tests
 npm install
 ```
+
 ### Running the tests
 
 Open Cypress in interactive mode:
@@ -47,6 +55,8 @@ Or run all tests headlessly in the terminal:
 npx cypress run
 ```
 ## What's Covered
+
+19 automated tests across 5 spec files.
 
 - **Login** – valid/invalid credentials, locked-out user, required-field validation
 - **Sorting** – price (low-high, high-low) and name (A-Z, Z-A) sorting on the Inventory page
