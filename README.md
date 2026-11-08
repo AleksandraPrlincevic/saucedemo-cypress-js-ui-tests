@@ -3,13 +3,15 @@
 ## Description
 End-to-end test automation framework for [SauceDemo](https://www.saucedemo.com/), built with **Cypress** and **JavaScript**, using the Page Object Model (POM) pattern.
 
-This project was built as a portfolio project to practice UI test automation. A companion project testing the same site with **Java + Selenium** 
+This project was built as a portfolio project to practice UI test automation. A companion project testing the same site manually and with **Java + Selenium** 
 is available here:  [Java/Selenium version of this project](https://github.com/AleksandraPrlincevic/saucedemo-selenium-java-ui-tests).
 
 ## Tech Stack
 
 - Node.js v24.22.2
 - Cypress 15.18.0 – end-to-end testing framework
+- Mocha – test runner (bundled with Cypress)
+- Chai – assertion library (bundled with Cypress)
 - JavaScript
 - Page Object Model (POM) design pattern
 - Run on Windows 11
